@@ -29,6 +29,9 @@ img {
 main img {
     width: 150px;
     height: auto;
+    padding: 2px;
+    border: 1px solid black;
+    box-shadow: 0 0 20px;
 }
 
 aside {
@@ -54,5 +57,5 @@ footer {
     margin-top: 15px;
     border-top: 1px solid #000;
     text-align: center;
-    uu
+
 }
