@@ -1,3 +1,12 @@
+:root {
+    --padding: 2px;
+    --height: auto;
+    --width: 150px;
+    --border: 1px solid black;
+    --text-align: center;
+
+}
+
 nav {
     background-color: darkblue;
     padding: 10px;
@@ -19,18 +28,12 @@ main {
 }
 
 img {
-    width: 150px;
-    height: auto;
-    border: 1px solid black;
-    padding: 2px;
+
     box-shadow: 0 0 30px;
 }
 
 main img {
-    width: 150px;
-    height: auto;
-    padding: 2px;
-    border: 1px solid black;
+
     box-shadow: 0 0 20px;
 }
 
@@ -41,12 +44,12 @@ aside {
     padding: 2rem;
     background-color: #eee;
     color: #333;
-    text-align: center;
+
 }
 
 aside img {
     width: 200px;
-    height: auto;
+
 }
 
 p {
@@ -56,6 +59,5 @@ p {
 footer {
     margin-top: 15px;
     border-top: 1px solid #000;
-    text-align: center;
 
 }
