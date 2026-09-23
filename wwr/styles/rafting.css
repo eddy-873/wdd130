@@ -39,7 +39,7 @@ footer {
 h1,
 h2 {
     font-family: var(--heading-font);
-    background-color: #264753;
+    background-color: var(--accent1-color);
     text-align: center;
     color: #fff;
 
@@ -147,7 +147,7 @@ header img {
     justify-content: space-between;
 }
 
-.adventure figcaption {
+.adventures figcaption {
     text-align: center;
 }
 
@@ -156,9 +156,6 @@ footer {
     grid-template-columns: 1fr auto;
     align-items: center;
     padding: 10px;
-}
-
-footer {
     margin: 0px;
 }
 
