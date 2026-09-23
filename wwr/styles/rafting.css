@@ -2,7 +2,7 @@
     --primary-color: #055a05;
     --accent1-color: #264753;
     --accent2-color: #e9c46a;
-    --heading-font: "Times New Roman", "Georgia", serifs;
+    --heading-font: "Times New Roman", "Georgia", serif;
     --body-font: Arial, Helvetica, sans-serif;
 }
 
@@ -39,10 +39,9 @@ footer {
 h1,
 h2 {
     font-family: var(--heading-font);
-    color: var(--primary-color);
     background-color: #264753;
     text-align: center;
-    color: white;
+    color: #fff;
 
 }
 
@@ -161,7 +160,6 @@ footer {
 
 footer {
     margin: 0px;
-    padding: 0px;
 }
 
 .socialmedia {
@@ -170,10 +168,12 @@ footer {
     gap: 10px;
     margin: 0;
     padding: 0;
+
 }
 
 .socialmedia a {
     display: block;
+    text-decoration: none;
 }
 
 .socialmedia img {
