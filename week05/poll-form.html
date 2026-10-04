@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/poll-form.css">
+    <title>Forms</title>
+</head>
+
+<body>
+    <header>
+
+    </header>
+    <main>
+        <form>
+            <div class="form-item">
+                <label for="full name">Full Name</label>
+                <input type="text" id="fullname" name="fullname" required>
+            </div>
+            <div class="form-item column1">
+                <label for="full name">Full Name</label>
+                <input type="text" id="fullname" name="fullname" required>
+            </div>
+            <div class="form-item column2">
+                <label for="useremail">Email</label>
+                <input type="email" id="useremail" name="useremail" required>
+            </div>
+
+
+        </form>
+        <form>
+            <label for="quantity">Select Quantity</label>
+            <select name="quantity" id="quantity">
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+
+            </select>
+        </form>
+        <form>
+            <label for="browsers">What is your favorite browser?</label>
+            <select name="browser" id="browser">
+                <option value="chrome">chrome</option>
+                <option value="Safari">safari</option>
+                <option value="Edge">Edge</option>
+                <option value="Firefox">chrome</option>
+                <option value="others">others</option>
+            </select>
+
+            <label for="pet">Do you have household pet?</label>
+            <input type="checkbox" id="pet" name="pet">
+            <label for="feedback">List the places you have lived</label>
+            <textarea id="feedback" name="feedback" rows="4"
+              placeholder="still water florida, Amsterdam Netherland, Timbuktu Mali"></textarea>
+            <button type="submit">Submit Poll</button>
+        </form>
+    </main>
+    <footer>
+        ©️2026 |HTML Form-User Poll Activity | Edward Kamara.
+    </footer>
+</body>
+
+</html>
