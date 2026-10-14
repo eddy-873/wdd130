@@ -14,7 +14,6 @@ header {
     grid-template-columns: 120px 1fr 1fr;
     align-items: center;
     padding: 10px;
-
 }
 
 * {
@@ -82,6 +81,18 @@ h1 {
     position: absolute;
     bottom: 20px;
 
+}
+
+footer p {
+    margin: 0;
+    text-align: right;
+}
+
+footer .socialmedia {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
 }
 
 .history {
@@ -152,11 +163,11 @@ header img {
 }
 
 footer {
-    display: grid;
-    grid-template-columns: 1fr auto;
+    display: flex;
+    justify-content: flex-end;
     align-items: center;
-    padding: 10px;
-    margin: 0px;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
 .socialmedia {
@@ -178,4 +189,343 @@ footer {
     height: 35px;
     display: block;
 
+}
+
+.contact-page {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 10px;
+    color: #222;
+}
+
+.company-contact {
+    text-align: center;
+    margin: 0 0 14px;
+
+}
+
+.company-contact h1 {
+    margin: 0 0 3px;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.company-contact address {
+    font-style: normal;
+    line-height: 1.3;
+    font-size: 0.9rem;
+}
+
+.company-contact address a {
+    color: #222;
+    text-decoration: none;
+}
+
+.contact-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 36px;
+    align-items: center;
+    margin: 12px 0 20px;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.contact-map iframe {
+    display: block;
+    width: 100%;
+    height: 247px;
+    border: 0;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 60px 1fr;
+    gap: 6px;
+    align-items: center;
+}
+
+.form-row label,
+.message-row > {
+    font-size: 0.8rem;
+}
+
+.form-row input {
+    box-sizing: border-box;
+    width: 100%;
+    min-width: 0;
+    height: 26px;
+    padding: 4px 6px;
+    border: 1px solid #777;
+    border-radius: 4px;
+    font: inherit;
+}
+
+.purpose-row {
+    display: grid;
+    grid-template-columns: 60px 1fr;
+    gap: 6px;
+    align-items: center;
+    border: 0;
+    padding: 0;
+    margin: 2px 0;
+    min-width: 0;
+}
+
+.purpose-row legend {
+    float: left;
+    width: 60px;
+    padding: 0;
+    font-size: 1.2;
+}
+
+.purpose-row label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 0.8rem;
+}
+
+.purpose-row input {
+    margin: 0;
+    accent-color: #264753;
+
+}
+
+.message-row {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+}
+
+.message-row textarea {
+    box-sizing: border-box;
+    width: 100%;
+    height: 50px;
+    padding: 6px;
+    resize: vertical;
+    border: 1px solid #777;
+    border-radius: 4px;
+    font: inherit;
+}
+
+.newsletter-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 5px;
+    font-size: 0.75rem;
+
+}
+
+.newsletter-row input {
+    margin: 2px 0 0;
+    accent-color: #264753;
+}
+
+.newsletter-row label {
+    line-height: 1.3;
+}
+
+.contact-form button {
+    width: 100%;
+    min-height: 26px;
+    padding: 4px;
+    color: #222;
+    background-color: #eee;
+    border: 1px solid #888;
+    border-radius: 4px;
+    font: inherit;
+    font-size: 0.8rem;
+    cursor: pointer;
+}
+
+.employee-section {
+    border: 1px solid #777;
+    background-color: #f5f5f5;
+    padding: 6px 15px 16px;
+    margin: 20px 0 6px;
+    font-size: 1.2rem;
+}
+
+.employee-profiles {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    gap: 15px;
+
+}
+
+.employee-profiles figure {
+    flex: 1;
+    margin: 0;
+    text-align: center;
+    font-size: 0.8rem;
+
+}
+
+.employee-profiles img {
+    display: block;
+    width: 80px;
+    height: 67px;
+    object-fit: cover;
+    margin: 0 auto 3px;
+
+}
+
+.employee-profiles figcaption {
+    margin-top: 3px;
+}
+
+@media screen and (max-width: 600px) {
+    .contact-layout {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
+
+.contact-map iframe {
+    height: 230px;
+}
+
+.employee-profiles {
+    gap: 8px;
+}
+
+.employee-profiles img {
+    width: 100%;
+    max-width: 100px;
+    height: 75px;
+}
+
+.employee-section {
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+/* FIX CONTACT MAP AND FORM LAYOUT */
+
+main.contact-page {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.contact-page .contact-layout {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr;
+    gap: 36px;
+    align-items: center;
+    width: 100%;
+    margin: 12px 0 20px;
+}
+
+.contact-page .contact-map {
+    width: 100%;
+    min-width: 0;
+}
+
+.contact-page .contact-map iframe {
+    display: block;
+    width: 100%;
+    height: 247px;
+    border: 0;
+}
+
+.contact-page .contact-form {
+    width: 100%;
+    min-width: 0;
+    margin: 0;
+}
+
+.contact-page .contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 100%;
+}
+
+.contact-page .form-row {
+    display: grid;
+    grid-template-columns: 60px minmax(0, 1fr);
+    gap: 6px;
+    align-items: center;
+}
+
+.contact-page .form-row input {
+    box-sizing: border-box;
+    width: 100%;
+    height: 26px;
+}
+
+.contact-page .purpose-row {
+    display: grid;
+    grid-template-columns: 60px minmax(0, 1fr);
+    column-gap: 6px;
+    gap: 6px;
+    align-items: start;
+    border: none;
+    padding: 0;
+    margin: 8px 0;
+    min-width: 0;
+}
+
+.contact-page .purpose-row legend {
+    float: none;
+    width: 60px;
+    padding: 0;
+    margin-top: 15px;
+    font-size: 12px;
+    line-height: 1.2;
+
+}
+
+.contact-page .purpose-row > div {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.contact-page .purpose-row .purpose-options label {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    align-items: center;
+    gap: 5px;
+    font-size: 12px;
+    line-height: 1.2;
+    white-space: nowrap;
+}
+
+.contact-page .message-row textarea {
+    box-sizing: border-box;
+    width: 100%;
+    height: 50px;
+}
+
+.contact-page .contact-form button {
+    width: 100%;
+}
+
+.contact-page .employee-section {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 600px) {
+    .contact-page .contact-layout {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
+
+.contact-page .purpose-row .purpose-options input[type="radio"] {
+    flex-shrink: 0;
+    margin: 0;
 }
