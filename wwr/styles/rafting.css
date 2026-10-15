@@ -347,9 +347,11 @@ footer {
 .employee-section {
     border: 1px solid #777;
     background-color: #f5f5f5;
-    padding: 6px 15px 16px;
+    padding: 6px 8px 16px;
     margin: 20px 0 6px;
     font-size: 1.2rem;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .employee-profiles {
@@ -387,11 +389,6 @@ footer {
         grid-template-columns: 1fr;
         gap: 20px;
     }
-}
-
-.employee-section {
-    padding-left: 8px;
-    padding-right: 8px;
 }
 
 main.contact-page {
