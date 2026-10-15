@@ -529,3 +529,19 @@ main.contact-page {
     flex-shrink: 0;
     margin: 0;
 }
+
+.contact-page .company-content h1 {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin: 10px 0 18px;
+    clear: both;
+}
+
+.contact-page .company-contact h1 {
+    position: static;
+    margin: 0 0 4px;
+    font-size: 1.5rem;
+    font-weight: normal;
+    color: #222;
+}
