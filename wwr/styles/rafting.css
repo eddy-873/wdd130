@@ -250,7 +250,7 @@ footer {
 }
 
 .form-row label,
-.message-row > {
+.message-row > * {
     font-size: 0.8rem;
 }
 
@@ -280,7 +280,7 @@ footer {
     float: left;
     width: 60px;
     padding: 0;
-    font-size: 1.2;
+    font-size: 1.2rem;
 }
 
 .purpose-row label {
@@ -386,10 +386,21 @@ footer {
         grid-template-columns: 1fr;
         gap: 20px;
     }
-}
 
-.contact-map iframe {
-    height: 230px;
+    .employee-profiles {
+        gap: 8px;
+    }
+
+    .employee-profile img {
+        width: 100%;
+        max-width: 100px;
+        height: 75px;
+    }
+
+    .employee-section {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
 }
 
 .employee-profiles {
@@ -406,8 +417,6 @@ footer {
     padding-left: 8px;
     padding-right: 8px;
 }
-
-/* FIX CONTACT MAP AND FORM LAYOUT */
 
 main.contact-page {
     width: 100%;
@@ -518,19 +527,12 @@ main.contact-page {
     box-sizing: border-box;
 }
 
-@media screen and (max-width: 600px) {
-    .contact-page .contact-layout {
-        grid-template-columns: 1fr;
-        gap: 20px;
-    }
-}
-
 .contact-page .purpose-row .purpose-options input[type="radio"] {
     flex-shrink: 0;
     margin: 0;
 }
 
-.contact-page .company-content h1 {
+.contact-page .company-contact h1 {
     display: block;
     width: 100%;
     text-align: center;
